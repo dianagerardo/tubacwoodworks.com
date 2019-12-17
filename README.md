@@ -47,4 +47,17 @@ Plan, Design, and Research
  
  ## Coming soon...
 
+ ## User Authentication
+The owner of the site will be able to login with a set of credentials. Once logged in, that user will have access to additional UI elements that will allow them to replace portfolio pictures via the UI. People who visit the site that aren't logged in won't have this same access. User authentication will use a local strategy which involves storing credentials in a local MySQL database. The password field will be hashed and salted so that the value won't be stored in plain text.
+
+### NPM packages used for authentication
+* passport
+* passport-local
+* bcryptjs (for hashing and salting password)
+* express-session (keeping track of user's authenticated session while browsing)
+* mysql2 and sequelize (to interact with the MySQL database storing user credentials)
+
+### Routes and Middleware
+There is a middleware function applied to routes to validate if the user is logged in or not. If the user is not logged in, they will not be presented with the additional options to update photos.
+
  [Back to top](#)
