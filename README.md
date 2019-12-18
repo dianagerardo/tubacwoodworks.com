@@ -16,6 +16,8 @@ This is the ( 1 of 2 ) README.md files. This file is to show the restrictions pl
 [Project *requirements ](#Project-*requirements) 
  
 [Deliverables](#Deliverables) 
+
+[MERN](#Mongo_db)
  
 ## Project *requirements 
  
@@ -62,5 +64,38 @@ There is a middleware function applied to routes to validate if the user is logg
 
 ### Mongo_DB 
 I added this to test.
+
+## Mongo_db
+
+```json
+{
+  "key" : "value"
+}
+```
+
+## Express
+```javascript
+
+```
+## React.js
+```javascript
+
+```
+
+## Node.js
+```javascript
+
+```
+
+### SCSS & Pre Pros
+```css
+
+```
+
+### Site Map
+<img src="" alt="site map for the page." />
+
+---
+
 
  [Back to top](#)
