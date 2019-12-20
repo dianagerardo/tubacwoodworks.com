@@ -18,6 +18,8 @@ This is the ( 1 of 2 ) README.md files. This file is to show the restrictions pl
 [Deliverables](#Deliverables) 
 
 [MERN](#Mongo_db)
+
+[Style](#Style)
  
 ## Project *requirements 
  
@@ -295,6 +297,20 @@ var NotesSchema = new Schema({
 ### SCSS & Pre Pros
 ```css
 
+```
+
+### Style
+
+Break Points in HTML <head> tag.
+
+Using [Pre Pros](#) We compile our SCSS into CSS and asign it to the public folder. 
+
+```html
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="/styles/small.css"  title="no title" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="/styles/medium.css"  title="no title" charset="utf-8" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="/styles/large.css"  title="no title" charset="utf-8" />
 ```
 
 ### Site Map
