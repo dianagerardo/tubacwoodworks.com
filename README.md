@@ -190,6 +190,55 @@ var CustomerSchema = new Schema({
   
     // ]
   }
+  promoContactByEmail: {
+    type: Boolean,
+    required: "",
+    default: false
+  },
+   promoContactBySMS: {
+    type: Boolean,
+    required: "",
+    default: false
+  },
+   appContactByEmail: {
+    type: Boolean,
+    required: "",
+    default: true
+  },
+   appContactBySMS: {
+    type: Boolean,
+    required: "",
+    default: false
+   },
+   streetAddress: {
+     type: String,
+   },
+   city: {
+     type: String
+   },
+   state: {
+     type: String
+   },
+    zipcode: {
+     type: String
+   },
+    zip4: {
+      type: String
+   },
+   leadType: {
+     type: String
+   },
+   leadSource: {
+     type: String
+   },
+    createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+  updateAt: {
+    type: Date,
+    date: new Date(Date.now())
+  }
 
  
 }
