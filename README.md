@@ -189,7 +189,7 @@ var CustomerSchema = new Schema({
     // choice: [
   
     // ]
-  }
+  },
   promoContactByEmail: {
     type: Boolean,
     required: "",
@@ -239,8 +239,6 @@ var CustomerSchema = new Schema({
     type: Date,
     date: new Date(Date.now())
   }
-
- 
 }
 ```
 
