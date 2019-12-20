@@ -178,6 +178,18 @@ var CustomerSchema = new Schema({
     unique:true,
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
   },
+  phoneNumber: {
+    type: String,
+    required: "Phone number is Required",
+    match: [/^\b\d{3}[-.]?\d{3}[-.]?\d{4}\b$/, "Please enter a valid phone "],
+  },
+  numberType: {
+    type: String,
+    required: "Phone type is Required",
+    // choice: [
+  
+    // ]
+  }
 
  
 }
